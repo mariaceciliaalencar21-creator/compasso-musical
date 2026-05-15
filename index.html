@@ -4,26 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compasso Musical - Loja de Instrumentos Musicais</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family:'Segoe UI', Tahoma, Geneva,
+             Verdana, sans-serif;
+             background-color: #f8f9fa;
+             color: #333333;
+             line-height: 1.6;
+        }
+
+        h1,h2,h3 {
+            color: #1a1a1a;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+        .cabecalhoPrincipal {
+            background-color: #ffff;
+            padding: 1.5rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nomeLogo {
+          font-size: 1.8rem;
+          font-weight: bold;
+          color: #d32f2f;
+        }
+        .listaNavegacao {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .linkNav {
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .linkNav:houver {
+            color: #d32f2f;
+        }
+    </style>
 </head>
 <body>
     <!--Cabeçalho do site-->
-    <header id="header">
+    <header id="header" class="cabecalhoPrincipal">
 <div id="logo">
-<h1>Compasso musical</h1>
+<h1 class="nomeLogo">Compasso musical</h1>
 </div>
 <nav id="nav">
-<ul>
+<ul class="listaNavegacao">
     <li>
-        <a href="#">Inicio</a>
+        <a href="#hero" 
+        class="linkNav">Inicio</a>
+    </li>
+        <a href="#sobre" 
+        class="linkNav">Sobre</a>
+        <li>
+        <a href="#produtos" 
+        class="linkNav">produtos</a>
     </li>
         <li>
-        <a href="#">produtos</a>
+        <a href="#depoimentos" 
+        class="linkNav">Depoimento</a>
     </li>
         <li>
-        <a href="#">Depoimento</a>
-    </li>
-        <li>
-        <a href="#">Contatos</a>
+        <a href="#contatos"
+        class="linkNav">Contatos</a>
     </li>
     </ul>
     </nav>
